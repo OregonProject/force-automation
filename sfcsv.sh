@@ -23,7 +23,7 @@ read -p "Would you like to insert this file somewhere else?: " INSERT
 case "$INSERT" in 
    [yY] | [yY][eE][sS])
      force login -i=test
-     force bulk insert $sObject sf_csv.csv
+     force bulk insert $sObject sf_$sObject.csv
      ;;
    [nN] | [nN][oO])
      echo "You can find your file in the current directory as 'sf_$sObject.csv'"
